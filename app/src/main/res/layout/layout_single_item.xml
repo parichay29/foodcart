@@ -1,0 +1,232 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="@dimen/_70sdp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/_5sdp"
+    android:layout_marginEnd="@dimen/_5sdp"
+    android:layout_marginBottom="@dimen/_5sdp"
+    android:background="@color/white"
+    app:cardCornerRadius="@dimen/_5sdp"
+    app:cardElevation="2dip">
+
+    <RelativeLayout
+        android:id="@+id/rootlayout"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:id="@+id/rel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_60sdp"
+            >
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/iv_home_latest"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_60sdp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/splash_screen"
+                app:riv_corner_radius="0dp" />
+
+            <ImageView
+                android:id="@+id/foodtype_img"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_alignParentEnd="true"
+                android:paddingTop="5dp"
+                android:paddingEnd="3dp"
+                android:visibility="gone"
+                android:src="@drawable/button_background" />
+
+        </RelativeLayout>
+
+        <!--<View
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bg_gradient_black_round"
+            android:gravity="center_vertical" />-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rel"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:paddingEnd="@dimen/_3sdp"
+            android:paddingRight="@dimen/_3sdp"
+            android:paddingStart="@dimen/_3sdp"
+            android:paddingLeft="@dimen/_3sdp">
+
+            <LinearLayout
+                android:id="@+id/llname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/tv_item_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_centerInParent="true"
+                    android:layout_weight="0.5"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="Fast Food"
+                    android:textColor="@color/finestBlack" />
+
+                <TextView
+                    android:id="@+id/rupees"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.5"
+                    android:paddingStart="3dp"
+                    android:paddingTop="2dp"
+                    android:paddingEnd="3dp"
+                    android:text="100 "
+                    android:textColor="@color/finestBlack"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:id="@+id/rel_spe"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/button_background_spinner"
+                    android:orientation="horizontal"
+                    android:paddingTop="5dp"
+                    android:visibility="gone">
+
+                    <Spinner
+                        android:id="@+id/spinnersp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:background="@android:color/transparent"
+                        android:gravity="center"
+                        android:spinnerMode="dropdown" />
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/_5sdp"
+                        android:src="@drawable/down_arrow" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_below="@+id/llname"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center"
+                    android:paddingTop="@dimen/_4sdp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvAddtoCart"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_27sdp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/addcart_drawable"
+                        android:gravity="center"
+                        android:padding="@dimen/_2sdp"
+                        android:layout_margin="@dimen/_2sdp"
+                        android:text="ADD"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/_9ssp"
+                        android:visibility="visible" />
+
+                    <RelativeLayout
+                        android:id="@+id/r_addcart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_27sdp"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/decc"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:padding="@dimen/_5sdp"
+                            android:src="@drawable/ic_mins_y" />
+
+                        <TextView
+                            android:id="@+id/qty"
+                            style="@style/order_lable_style"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:padding="@dimen/_5sdp"
+                            android:textSize="@dimen/_9ssp"
+                            android:text="0" />
+
+                        <ImageView
+                            android:id="@+id/incc"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:padding="@dimen/_5sdp"
+                            android:src="@drawable/ic_plus_y" />
+                    </RelativeLayout>
+
+                    <!--<Button
+                        android:id="@+id/decc"
+                        android:layout_width="@dimen/_16sdp"
+                        android:layout_height="@dimen/_16sdp"
+                        android:background="@drawable/btnplusminus"
+                        android:onClick="decreaseInteger"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="-"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <TextView
+                        android:id="@+id/qty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="0"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/incc"
+                        android:layout_width="@dimen/_16sdp"
+                        android:layout_height="@dimen/_16sdp"
+                        android:background="@drawable/btnplusminus"
+                        android:onClick="increaseInteger"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="+"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/_10sdp" />-->
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

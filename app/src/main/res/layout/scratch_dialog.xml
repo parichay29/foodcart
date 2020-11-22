@@ -1,0 +1,111 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rel_dialog"
+    android:background="@color/transparent">
+
+    <ImageView
+        android:id="@+id/img_cancel"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_back" />
+
+    <RelativeLayout
+        android:id="@+id/relscratch"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="150dp"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:id="@+id/textscratch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/texttitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="YOU EARNED"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textamount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="20"
+                android:textColor="@color/colorAccent"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imgview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:src="@drawable/p_tomato"
+            android:visibility="gone" />
+
+        <in.myinnos.androidscratchcard.ScratchCard
+            android:id="@+id/scratchImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:background="@color/transparent"
+            android:visibility="visible"
+            app:scratchWidth="@dimen/_50sdp"
+            app:scratchDrawable="@drawable/sc2" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relscratch"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_horizontal"
+        android:text="Congratulations!"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_below="@id/text_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button_background"
+        android:gravity="center_vertical|center_horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="Tell Your Friends"
+        android:textAllCaps="false"
+        android:textColor="#ffffffff"
+        android:textSize="20sp"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>

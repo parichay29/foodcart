@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ProfileEditActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_profile_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/toolbar"
+        app:title="Edit Profile"
+        app:titleTextColor="@color/finestBlack" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ripple"
+        android:layout_below="@+id/toolbar_profile_edit">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar_profile_edit"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/profile_image"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:src="@drawable/profile"
+                    app:civ_border_color="@color/colorAccent"
+                    app:civ_border_width="2dp"
+                    app:civ_circle_background_color="@color/Color_Silver"/>
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentRight="true"
+    android:layout_marginBottom="@dimen/_20sdp"
+    android:layout_marginEnd="@dimen/_10sdp"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/image"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:src="@color/white"
+        app:civ_border_color="@color/colorAccent"
+        app:civ_border_width="2dp"
+        app:civ_circle_background_color="@color/white" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_5sdp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_pencil"/>
+
+</RelativeLayout>
+            </RelativeLayout>
+
+
+
+
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edtEmail"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:hint="@string/enteremail"
+                    android:inputType="textCapWords"
+                    android:padding="10dp"></EditText>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Spinner
+                android:id="@+id/gender"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:prompt="@string/entergender" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/edtPhone"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:focusable="false"
+                    android:hint="@string/enterphone"
+                    android:inputType="textCapWords"
+                    android:padding="10dp"></EditText>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edtLocation"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:hint="@string/enterlocation"
+                    android:inputType="textCapWords"
+                    android:padding="10dp"></EditText>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edtAddress"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:hint="@string/enteradd"
+                    android:inputType="textCapWords"
+                    android:padding="10dp"></EditText>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edtDOB"
+                    android:focusable="false"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:hint="@string/enterdob"
+                    android:inputType="date"
+                    android:padding="10dp"></EditText>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edtDOA"
+                    android:focusable="false"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:hint="@string/enterdoa"
+                    android:inputType="date"
+                    android:padding="10dp"></EditText>
+                <Button
+                    android:id="@+id/btnUpdate"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/finestBlack"
+                    android:text="@string/update"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+
+</RelativeLayout>

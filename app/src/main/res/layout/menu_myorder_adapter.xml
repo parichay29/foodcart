@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relativeLayout_gallery_adapter"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="2dp"
+    android:paddingTop="2dp">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/white"
+        android:paddingBottom="0dp"
+        android:paddingTop="0dp"
+        app:cardCornerRadius="3dip"
+        app:cardElevation="2dp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <com.rndtechnosoft.foodcart.Util.SquareImageView
+                android:id="@+id/imgstatus"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="start"
+                android:layout_margin="20dp"
+                android:layout_centerVertical="true"
+                 />
+
+                <TextView
+                    android:id="@+id/status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="3dp"
+                    android:layout_toLeftOf="@+id/data"
+                    android:paddingTop="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/imgstatus"
+                    android:gravity="center"
+                    android:paddingEnd="3dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@android:color/transparent"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="@color/finestBlack"
+                    android:textSize="13sp" />
+
+
+                <LinearLayout
+                    android:id="@+id/data"
+                    android:layout_width="wrap_content"
+                    android:layout_toEndOf="@id/imgstatus"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingStart="3dp"
+                    android:paddingEnd="3dp"
+                    android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/orderno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="3dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="3dp"
+            android:background="@android:color/transparent"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/finestBlack"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="3dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="3dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/ordertype"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingStart="3dp"
+            android:paddingEnd="3dp"
+            android:textSize="16sp"
+            android:text="100 "
+            android:textColor="@color/finestBlack" />
+
+                    <TextView
+                        android:id="@+id/deliveryTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:paddingStart="3dp"
+                        android:paddingEnd="3dp"
+                        android:textSize="12sp"
+                        android:text="Delivery Time"
+                        android:visibility="gone"
+                        android:textColor="@color/colorAccent" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

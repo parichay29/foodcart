@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.android.gms:play-services-measurement-sdk:16.5.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/04fa2d75405432514f68ae54fe887b55/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/04fa2d75405432514f68ae54fe887b55/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/fb05ba7e7a8040fcfa7e6ce5ca89e576/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1c7eee1b695fb329fb28688e5335b7d4/play-services-measurement-sdk-16.5.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1c7eee1b695fb329fb28688e5335b7d4/play-services-measurement-sdk-16.5.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1c7eee1b695fb329fb28688e5335b7d4/play-services-measurement-sdk-16.5.0/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.android.gms/play-services-measurement-sdk/16.5.0/9c03e98567b9437a88b7677031de4c7920b9ffba/play-services-measurement-sdk-16.5.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>

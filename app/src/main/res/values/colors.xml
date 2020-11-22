@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3c428e</color>
+    <color name="colorPrimaryDark">#D5D5D5</color>
+    <color name="colorAccent">#fc8019</color>
+
+
+    <color name="colorAccentLight">#F7A35D</color>
+    <color name="colorAccentLightLight">#FCBC86</color>
+    <color name="navigation_drawar">#FFF</color>
+    <color name="toolbar">@color/white</color>
+    <color name="drawar_text">@color/colorPrimary</color>
+    <color name="app_background">#F2F2F2</color>
+    <color name="about_us_Text">#636363</color>
+    <color name="about_us_SubText">#8b8b8b</color>
+    <color name="view_facilities_adapter">#80A0B0B8</color>
+    <color name="contactUS_text">#78909c</color>
+    <color name="enterText_contactUs_fragment">#78909c</color>
+    <color name="button_contactUs_fragment">@color/colorAccent</color>
+    <color name="button_text_contactUs_fragment">#FFFFFF</color>
+    <color name="facilities_adapter_text">#0058B6</color>
+    <color name="about_us_Text_appName">#0058B6</color>
+    <color name="textView_homeFragment">#848383</color>
+    <color name="white">#FFF</color>
+    <color name="hint">#767676</color>
+    <color name="ripple_color">#CE93D8</color>
+    <color name="green">#232653</color>
+    <color name="new_green">#4CAF50</color>
+    <color name="Color_Silver">#dadada</color>
+    <color name="finestBlack">#0e0e0e</color>
+    <color name="finestBlack1">#9E5E4D4D</color>
+    <color name="finestBlack2">#A7A4A4</color>
+
+    <color name="bg">#001624</color>
+
+    <color name="grey">#ADECECEC</color>
+
+    <color name="row_product_card_bg">#fff6f6f6</color>
+</resources>

@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="Gradle: com.android.support.test:exposed-instrumentation-api-publish:0.5@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/92c081b9164ff681be3d73d678286a6f/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/92c081b9164ff681be3d73d678286a6f/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ded6b871e206cbd1b1e6c7e7f3af5d4d/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2c6db7cb913b512476d82da4c3dc0b9d/exposed-instrumentation-api-publish-0.5/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2c6db7cb913b512476d82da4c3dc0b9d/exposed-instrumentation-api-publish-0.5/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2c6db7cb913b512476d82da4c3dc0b9d/exposed-instrumentation-api-publish-0.5/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support.test/exposed-instrumentation-api-publish/0.5/81d0ed6618547b96baa84c6da154c88bc3a98cea/exposed-instrumentation-api-publish-0.5-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support.test/exposed-instrumentation-api-publish/0.5/493e9b2f2905ddc7f1a152446cc1d9d00ded10b0/exposed-instrumentation-api-publish-0.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

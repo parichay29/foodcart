@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.firebase:firebase-crash:16.2.1@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/72d2fa62a652f8c32a2516dc700ef786/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/72d2fa62a652f8c32a2516dc700ef786/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c6d08ac1de82bd7f43a8ee3eeb468b6e/firebase-crash-16.2.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c6d08ac1de82bd7f43a8ee3eeb468b6e/firebase-crash-16.2.1/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c6d08ac1de82bd7f43a8ee3eeb468b6e/firebase-crash-16.2.1/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

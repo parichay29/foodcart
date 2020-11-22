@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layoutDirection="ltr"
+    android:id="@android:id/text1"
+    style="@style/spinnerItemStyle"
+    android:singleLine="true"
+    android:layout_width="@dimen/_70sdp"
+    android:drawableEnd="@drawable/down_arrow"
+    android:paddingStart="@dimen/_10sdp"
+    android:paddingEnd="@dimen/_10sdp"
+    android:drawablePadding="@dimen/_3sdp"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    app:layout_anchorGravity="center_horizontal"
+    android:layout_gravity="center_horizontal"
+    android:ellipsize="marquee" />
+

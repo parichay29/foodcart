@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.OrderFragment">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/pullToRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView_gallery_fragment"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/toolbar_gallery_detail"
+            android:layout_height="match_parent"
+            android:background="@color/app_background"
+            android:visibility="gone"/>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <TextView
+        android:id="@+id/txtNoData"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="No Orders Found!!"
+        android:textColor="@color/finestBlack"
+        android:textSize="@dimen/_16sdp"
+        android:gravity="center_vertical|center_horizontal"/>
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/progresbar_gallery_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        app:indicatorColor="@color/colorAccent"
+        app:indicatorName="BallPulseIndicator"
+        android:visibility="gone"/>
+
+</RelativeLayout>

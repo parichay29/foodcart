@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ScratchCardActivity"
+    android:background="?android:colorBackground">
+
+    <TextView
+        android:id="@+id/nodata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Coupons!!"
+        android:layout_centerInParent="true"
+        android:textSize="@dimen/_30ssp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rewardlist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+        <ImageView
+            android:id="@+id/rewardImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/sc1"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"/>
+
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/left_arrow"
+            android:layout_margin="15dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:padding="@dimen/_20sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="@string/rupee"
+                android:textColor="@color/bg"
+                android:textStyle="bold"
+                android:textSize="@dimen/_14ssp" />
+
+            <TextView
+                android:id="@+id/amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:text="@string/rupeetext"
+                android:textColor="@color/bg"
+                android:textStyle="bold"
+                android:textSize="@dimen/_40ssp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/rewardText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:text="Total Rewards"
+                android:textColor="@color/bg"
+                android:textStyle="bold"
+                android:textSize="@dimen/_14ssp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/recycle_relative"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rewardImage">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerview_scratch"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:nestedScrollingEnabled="false" />
+
+
+            <com.wang.avi.AVLoadingIndicatorView
+                android:id="@+id/scratchProgress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:visibility="visible"
+                app:indicatorColor="@color/colorAccent"
+                app:indicatorName="BallPulseIndicator" />
+        </RelativeLayout>
+        </RelativeLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>
